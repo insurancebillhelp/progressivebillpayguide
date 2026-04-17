@@ -1,1 +1,29 @@
+# OS files
+.DS_Store
+Thumbs.db
 
+# Logs
+*.log
+
+# Node / temp
+node_modules/
+dist/
+build/
+
+# Editor files
+.vscode/
+.idea/
+
+# Jekyll cache
+_site/
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Python (agar kabhi use ho)
+__pycache__/
+*.pyc
+
+# Misc
+*.tmp
+*.bak
