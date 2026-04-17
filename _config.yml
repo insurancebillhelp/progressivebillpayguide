@@ -1,0 +1,21 @@
+title: Insurance Bill Help
+description: Progressive insurance bill pay guides including online, guest, phone and billing help.
+baseurl: ""
+url: "https://insurancebillhelp.github.io"
+
+# Build settings
+markdown: kramdown
+theme: null
+
+# Plugins (GitHub supported)
+plugins:
+  - jekyll-sitemap
+
+# Exclude files
+exclude:
+  - README.md
+  - node_modules
+  - .gitignore
+
+# SEO
+author: insurancebillhelp
