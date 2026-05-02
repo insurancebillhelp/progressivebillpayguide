@@ -1,0 +1,36 @@
+/* TEAM */
+Publisher: Insurance Bill Help USA
+Project: Insurance Billing Help Guides
+Website: https://insurancebillhelp.github.io/
+Contact: Available through on-page support information
+
+/* SITE */
+Site Name: Progressive Insurance Billing Guide
+Primary Topic: Insurance Bill Payment, Guest Payment, Billing Support
+URL: https://insurancebillhelp.github.io/progressivebillpayguide/
+Language: English
+Platform: GitHub Pages
+
+/* CONTENT */
+Description: 
+Independent informational guide covering Progressive Insurance bill payment methods, 
+including online payment, guest payment without login, one-time payment, and billing issues.
+
+Focus Areas:
+- Bill pay online
+- Payment without login
+- Guest payment
+- Payment not posted issues
+- Billing help and support
+
+/* TECHNOLOGY */
+Built With: HTML5, CSS3
+Hosting: GitHub Pages
+Optimization: SEO structured content, FAQ schema, internal linking, AI-snippet friendly format
+
+/* DISCLAIMER */
+This website is an independent informational resource and is not affiliated with Progressive Insurance.
+Users should verify all billing and payment details through official sources.
+
+/* LAST UPDATED */
+2026-04
