@@ -26,68 +26,117 @@
 "publisher":{"@type":"Organization","name":"insurancebillhelp"}
 }
 </script>
-
 <style>
-body{background:#0b1220;color:#e2e8f0;font-family:sans-serif;margin:0}
-.container{max-width:1100px;margin:auto;padding:20px}
-.box{background:#111827;padding:18px;border-radius:12px;margin-bottom:20px}
-h1,h2,h3{color:#fff}
-a{color:#38bdf8;text-decoration:none}
-.call{position:fixed;bottom:20px;left:20px;background:#16a34a;color:#fff;padding:12px 18px;border-radius:50px;font-weight:600;z-index:999}
-.badge{font-size:13px;background:#1f2937;padding:6px 10px;border-radius:6px}
-table{width:100%;border-collapse:collapse}
-th,td{border:1px solid #1f2937;padding:10px;text-align:left}
-  /* FIX: TABLE RESPONSIVE */
-.table-wrapper {
-  width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+
+/* RESET */
+*{box-sizing:border-box;margin:0;padding:0}
+
+/* BODY */
+body{
+  background:#0b1220;
+  color:#e2e8f0;
+  font-family:sans-serif;
+  overflow-x:hidden;
 }
 
-/* FIX: TABLE */
-table {
-  width: 100%;
-  border-collapse: collapse;
-  min-width: 600px;
+/* CONTAINER */
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
 }
 
-th, td {
-  padding: 12px;
-  text-align: left;
+/* CARD / BOX */
+.box, .section-box{
+  background:#111827;
+  padding:20px;
+  border-radius:12px;
+  margin-bottom:20px;
+  width:100%;
 }
 
-/* FIX: SECTION BOX */
-.section-box {
-  width: 100%;
-  max-width: 100%;
-  overflow: hidden;
+/* HEADINGS */
+h1,h2,h3{
+  color:#fff;
+  margin-bottom:10px;
 }
 
-/* FIX: MOBILE */
-@media(max-width: 600px) {
+/* LINKS */
+a{
+  color:#38bdf8;
+  text-decoration:none;
+}
 
-  .section-box {
-    padding: 18px;
+/* BADGE */
+.badge{
+  font-size:13px;
+  background:#1f2937;
+  padding:6px 10px;
+  border-radius:6px;
+}
+
+/* TABLE WRAPPER */
+.table-wrapper{
+  width:100%;
+  overflow-x:auto;
+  -webkit-overflow-scrolling:touch;
+}
+
+/* TABLE */
+table{
+  width:100%;
+  min-width:600px;
+  border-collapse:collapse;
+}
+
+th,td{
+  border:1px solid #1f2937;
+  padding:12px;
+  text-align:left;
+}
+
+/* FLOATING CALL BUTTON */
+.call{
+  position:fixed;
+  bottom:20px;
+  left:20px;
+  background:#16a34a;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:50px;
+  font-weight:600;
+  z-index:999;
+}
+
+/* MOBILE FIX */
+@media(max-width:768px){
+
+  .container{
+    padding:15px;
   }
 
-  h2 {
-    font-size: 20px;
+  .box, .section-box{
+    padding:16px;
   }
 
-  table {
-    font-size: 14px;
+  h1{
+    font-size:22px;
   }
 
-  /* FIX BUTTON OVERLAP */
-  .floating-call-btn {
-    bottom: 80px;
+  h2{
+    font-size:20px;
   }
+
+  table{
+    font-size:14px;
   }
-  body {
-  overflow-x: hidden;
+
+  .call{
+    bottom:80px;
   }
+}
+
 </style>
-
 </head>
 
 <body>
