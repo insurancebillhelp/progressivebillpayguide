@@ -27,100 +27,67 @@
 }
 </script>
 <style>
-/* ===== RESET ===== */
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
 body{
   background:#0b1220;
   color:#e2e8f0;
-  font-family:'Inter',sans-serif;
-  overflow-x:hidden;
+  font-family:sans-serif;
+  margin:0;
+  overflow-x:hidden; /* FIX: right side blank remove */
 }
 
-/* ===== CONTAINER ===== */
 .container{
-  width:100%;
-  max-width:720px;
-  margin:0 auto;
+  max-width:720px; /* FIX: mobile center layout */
+  margin:auto;
   padding:16px;
-  padding-bottom:100px;
 }
 
-/* ===== HEADINGS ===== */
-h1{
-  font-size:22px;
-  line-height:1.4;
-  margin-bottom:12px;
-}
-
-h2{
-  font-size:20px;
-  margin-bottom:10px;
-}
-
-h3{
-  font-size:18px;
-  margin-bottom:8px;
-}
-
-/* ===== TEXT ===== */
-p{
-  font-size:15px;
-  line-height:1.7;
-  margin-bottom:10px;
-  word-break:break-word;
-}
-
-/* ===== LINKS ===== */
-a{
-  color:#38bdf8;
-  text-decoration:none;
-  word-break:break-word;
-}
-
-/* ===== BOX (CARDS) ===== */
+/* CARD */
 .box{
-  width:100%;
   background:#111827;
   padding:18px;
   border-radius:12px;
   margin-bottom:16px;
-  box-shadow:0 6px 20px rgba(0,0,0,0.25);
-  transition:0.2s ease;
+  width:100%; /* FIX */
 }
 
-.box:hover{
-  transform:translateY(-2px);
+/* TEXT */
+h1,h2,h3{
+  color:#fff;
+  margin-top:0;
 }
 
-.box:last-child{
-  margin-bottom:80px;
+p{
+  line-height:1.6;
 }
 
-/* ===== BADGE ===== */
-.badge{
-  font-size:13px;
-  background:#1f2937;
-  padding:6px 10px;
-  border-radius:6px;
-  display:inline-block;
-  margin-bottom:10px;
+/* LINKS */
+a{
+  color:#38bdf8;
+  text-decoration:none;
 }
 
-/* ===== TABLE ===== */
+/* CALL BUTTON FIX */
+.call{
+  position:fixed;
+  bottom:80px; /* FIX: overlap remove */
+  left:16px;
+  background:#16a34a;
+  color:#fff;
+  padding:12px 18px;
+  border-radius:50px;
+  font-weight:600;
+  z-index:999;
+}
+
+/* TABLE FIX */
 .table-wrapper{
   width:100%;
   overflow-x:auto;
-  -webkit-overflow-scrolling:touch;
 }
 
 table{
   width:100%;
-  min-width:500px;
+  min-width:500px; /* FIX: mobile scroll */
   border-collapse:collapse;
 }
 
@@ -130,39 +97,7 @@ th,td{
   text-align:left;
 }
 
-/* ===== FLOATING CALL BUTTON ===== */
-.call{
-  position:fixed;
-  bottom:90px;
-  left:16px;
-  background:#16a34a;
-  color:#fff;
-  padding:12px 18px;
-  border-radius:50px;
-  font-weight:600;
-  z-index:999;
-  box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-/* ===== FAQ ACCORDION ===== */
-.collapse-item{
-  margin-bottom:10px;
-  border-bottom:1px solid #1f2937;
-  padding-bottom:10px;
-}
-
-.collapse-title{
-  font-weight:600;
-  cursor:pointer;
-  margin-bottom:6px;
-}
-
-.collapse-content{
-  font-size:14px;
-  line-height:1.6;
-}
-
-/* ===== MOBILE FIX ===== */
+/* MOBILE */
 @media(max-width:600px){
 
   .container{
@@ -171,17 +106,12 @@ th,td{
 
   h1{font-size:20px;}
   h2{font-size:18px;}
-  h3{font-size:16px;}
 
   table{
     font-size:13px;
   }
-
-  .call{
-    bottom:80px;
-  }
-  }
-  <style>
+}
+</style>
 </head>
 
 <body>
