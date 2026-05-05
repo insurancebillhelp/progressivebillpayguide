@@ -37,6 +37,55 @@ a{color:#38bdf8;text-decoration:none}
 .badge{font-size:13px;background:#1f2937;padding:6px 10px;border-radius:6px}
 table{width:100%;border-collapse:collapse}
 th,td{border:1px solid #1f2937;padding:10px;text-align:left}
+  /* FIX: TABLE RESPONSIVE */
+.table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+/* FIX: TABLE */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+/* FIX: SECTION BOX */
+.section-box {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+/* FIX: MOBILE */
+@media(max-width: 600px) {
+
+  .section-box {
+    padding: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+
+  table {
+    font-size: 14px;
+  }
+
+  /* FIX BUTTON OVERLAP */
+  .floating-call-btn {
+    bottom: 80px;
+  }
+  }
+  body {
+  overflow-x: hidden;
+  }
 </style>
 
 </head>
@@ -521,41 +570,39 @@ Missing a payment may impact your policy status. Some policies include a grace p
 </div>
 
 <!-- PAYMENT TIMELINE -->
-<div class="box">
-<h2>Payment Processing Timeline</h2>
+<div class="section-box">
 
-<table>
-<tr>
-<th>Payment Method</th>
-<th>Processing Time</th>
-<th>Best Use Case</th>
-</tr>
+  <h2>Payment Processing Timeline</h2>
 
-<tr>
-<td>Online Payment</td>
-<td>Instant to few hours</td>
-<td>Regular billing</td>
-</tr>
-
-<tr>
-<td>Guest Payment</td>
-<td>Instant</td>
-<td>No login access</td>
-</tr>
-
-<tr>
-<td>Bank Transfer</td>
-<td>1–2 business days</td>
-<td>Scheduled payments</td>
-</tr>
-
-<tr>
-<td>Phone Payment</td>
-<td>Immediate</td>
-<td>Urgent situations</td>
-</tr>
-
-</table>
+  <div class="table-wrapper">
+    <table>
+      <tr>
+        <th>Payment Method</th>
+        <th>Processing Time</th>
+        <th>Best Use Case</th>
+      </tr>
+      <tr>
+        <td>Online Payment</td>
+        <td>Instant to few hours</td>
+        <td>Regular billing</td>
+      </tr>
+      <tr>
+        <td>Guest Payment</td>
+        <td>Instant</td>
+        <td>No login access</td>
+      </tr>
+      <tr>
+        <td>Bank Transfer</td>
+        <td>1–2 business days</td>
+        <td>Scheduled payments</td>
+      </tr>
+      <tr>
+        <td>Phone Payment</td>
+        <td>Immediate</td>
+        <td>Urgent situations</td>
+      </tr>
+    </table>
+  </div>
 
 </div>
 
